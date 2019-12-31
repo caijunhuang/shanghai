@@ -1,0 +1,41 @@
+{
+	"info": {
+		"_postman_id": "7125f6c0-01b9-49dd-b857-d87e3ce3af5a",
+		"name": "baidu",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "baidu",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"id": "490d3605-76d1-4d2d-8c4b-d9a9609ce271",
+						"exec": [
+							"pm.test(\"Status code is 200\", function () {",
+							"    pm.response.to.have.status(200);",
+							"});"
+						],
+						"type": "text/javascript"
+					}
+				}
+			],
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://www.baidu.com",
+					"protocol": "http",
+					"host": [
+						"www",
+						"baidu",
+						"com"
+					]
+				}
+			},
+			"response": []
+		}
+	],
+	"protocolProfileBehavior": {}
+}
